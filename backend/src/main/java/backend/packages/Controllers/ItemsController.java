@@ -6,6 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import backend.packages.BusinessLogic.ItemsManager;
 
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @RequestMapping("items")
@@ -16,17 +19,26 @@ public class ItemsController {
     @Autowired
     ItemsManager itemsManager;
 
-    @GetMapping("/{item_number}")
-    private ResponseEntity<Optional<Item>> getItemDetails(@PathVariable Long item_number){
-        Optional<Item> item = this.itemsManager.getItemDetails(item_number);
+
+    @GetMapping("")
+    private ResponseEntity<List<Item>> getAllItems(){
+        List<Item> allItems = this.itemsManager.getAllItems();
+        return new ResponseEntity<List<Item>>(allItems,HttpStatus.OK);
+//        return allItems;
+    }
+
+    @GetMapping("/{id}")
+    private ResponseEntity<Optional<Item>> getItemDetails(@PathVariable BigInteger id){
+        Optional<Item> item = this.itemsManager.getItemDetails(id);
        return new ResponseEntity<Optional<Item>>(item, HttpStatus.OK);
     }
 
-    @DeleteMapping("/{item_number}")
-    private ResponseEntity<Void> deleteItem(@PathVariable Long item_number) throws Exception {
-        this.itemsManager.deleteItemFromStock(item_number);
+    @DeleteMapping("/{id}")
+    private ResponseEntity<Void> deleteItem(@PathVariable BigInteger id) throws Exception {
+        this.itemsManager.deleteItemFromStock(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
+
 
     @PostMapping("")
     private ResponseEntity<Void> addItem(@RequestBody Item item ) throws Exception {
@@ -34,10 +46,9 @@ public class ItemsController {
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
-    @PutMapping("/{item_number}/{quantity}")
-    private ResponseEntity<Void> updateQuantity(@PathVariable Long item_number, @PathVariable Integer quantity) throws Exception {
-        this.itemsManager.updateQuantity(item_number,quantity);
+    @PutMapping("/{id}/{quantity}")
+    private ResponseEntity<Void> updateQuantity(@PathVariable BigInteger id, @PathVariable Integer quantity) throws Exception {
+        this.itemsManager.updateQuantity(id,quantity);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
-
 }
