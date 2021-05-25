@@ -1,17 +1,15 @@
 package backend.packages.demo;
-
 import backend.packages.Beans.Item;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
-
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -35,7 +33,7 @@ public class itemsApplicationTests {
 
     @Test
     public void getItemDetails() throws Exception {
-        BigInteger ItemID = new BigInteger("29919708344745815054630613433");
+        BigInteger ItemID = new BigInteger("29919751807496167075322599056");
         ResponseEntity<Item> response = this.restTemplate.getForEntity(baseURL + "/"+ItemID, Item.class);
         Item item = response.getBody();
         if(item==null)
@@ -52,7 +50,7 @@ public class itemsApplicationTests {
 
     @Test
     public void updateQuantity(){
-        BigInteger updatedItemID = new BigInteger("29919708305376726814102386577");
+        BigInteger updatedItemID = new BigInteger("29919751807496167075322599056");
         Item updatedItem = new Item();
         int itemNumber = (int) (Math.random() * 5);
         int amount = (int) (Math.random() * 150 - 90);

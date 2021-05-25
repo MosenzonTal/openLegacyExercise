@@ -30,7 +30,8 @@ public class ItemsManager {
     }
 
     public void addItemToStock(Item item) throws Exception {
-        if(item.getName()==null || item.getAmount() ==null || item.getItemNumber() == null || item.getInventoryCode() == null)
+        if(item.getName()==null || item.getAmount() ==null ||
+                item.getItemNumber() == null || item.getInventoryCode() == null)
             throw new Exception("Item must contain the fields: Name, Amount, ItemNumber and InventoryCode");
         if(this.itemRepo.existsItemByName(item.getName()))
             throw new Exception("Item is already exists");
