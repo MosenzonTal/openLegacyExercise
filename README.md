@@ -74,11 +74,12 @@ on **`deleteItem @Test`** we got the following Exception: *"id is not exist"* - 
 
 ### MongoDB ATLAS
 
-after using H2 as a DB for the application, i had to update to cloud database service. <br>
+after using H2 as a DB for the application,**i had to update to cloud database service.** <br>
 For this purpose, As a cloud database service i chose **MongoDB ATLAS service**. <br>
 i created a new cluster, with a new collection named `db01` which includes the table `items`.<br>
 i have configured **Network Access** -> **IP Access List** to public (0.0.0.0/0).<br>
 the last step was to connect the DB to the application by inserting the `connection string` into my application code.<br>
+Finally, the data arrives from the MongoDB as follows:
 
  <p align="left">
   <img src="https://i.ibb.co/Vq5nNFV/mongoDB.jpg" width="200" title="hover text">
