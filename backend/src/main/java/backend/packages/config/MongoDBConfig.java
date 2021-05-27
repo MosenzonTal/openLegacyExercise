@@ -10,13 +10,15 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @Configuration
 public class MongoDBConfig {
 
-    @Bean
-    CommandLineRunner commandLineRunner(ItemRepository itemRepository){
-        return strings -> {
-            itemRepository.save(new Item(1L,"Sony PlayStation 5",15,123372));
-            itemRepository.save(new Item(2L,"xBox 360",87,127923));
-            itemRepository.save(new Item(3L,"Lenovo thinkPad",17,120223));
-        };
-    }
+//    @Bean
+//    CommandLineRunner commandLineRunner(ItemRepository itemRepository){
+//        return strings -> {
+//            itemRepository.save(new Item(1L,"Sony PlayStation 5",15,123372));
+//            itemRepository.save(new Item(2L,"xBox 360",87,127923));
+//            itemRepository.save(new Item(3L,"Fifa21",17,230223));
+//            itemRepository.save(new Item(4L,"Lenovo thinkPad",23,120111));
+//            itemRepository.save(new Item(5L,"LG 17'screen",2,750233));
+//        };
+//    }
 
 }

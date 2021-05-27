@@ -15,7 +15,7 @@ import java.util.List;
 @SpringBootTest
 public class itemsApplicationTests {
 
-    private static final String baseURL = "http://localhost:8093/items";
+    private static final String baseURL = "http://localhost:8080/items";
     private RestTemplate restTemplate = new RestTemplate();
 
 
