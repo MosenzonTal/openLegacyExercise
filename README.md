@@ -23,7 +23,7 @@ id, item number, name, amount, inventory code
 
 #### Back End:
 
-java 15, Java Spring Boot, JPA, Hibernate
+java 15, Java Spring Boot, JPA, Hibernate, Swagger
 
 #### Database and Tools:
 
