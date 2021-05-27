@@ -143,7 +143,7 @@ https://springboot-backend-app.herokuapp.com/items
 
 <p align="center">
           <img src="https://www.digics.si/wp-content/uploads/2020/09/spring_boot_logo.png" width="175" title="hover text">
-          <img src="https://gocode.colorado.gov/wp-content/uploads/2020/11/MongoDB-sm-logo.gif" width="175" title="hover text">
+          <img src="https://images.ctfassets.net/wqwerb01q4v1/1OjsXzuqFttb5FJSPifw6d/851493951d70729c4d601edc4d70fd5c/MongoDB-logo-color.png" width="175" title="hover text">
        <img src="https://www.almtoolbox.com/blog_he/wp-content/uploads/2017/09/Git-Logo-2Color-1.png" width="175" title="hover text">
           <img src="https://miro.medium.com/max/3600/1*fIjRtO5P8zc3pjs0E5hYkw.png" width="175" title="hover text">
          <img src="https://img.techentice.com/media/2020/06/docker.png" width="125" title="hover text"> 
