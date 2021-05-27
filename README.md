@@ -132,4 +132,18 @@ https://springboot-backend-app.herokuapp.com/items
 
 -------
 
+<p align="center">
+  <b>© 2020 Tal Mosenzon.  All rights reserved.</b>
+</p>
+
+<p align="center">
+          <img src="https://www.digics.si/wp-content/uploads/2020/09/spring_boot_logo.png" width="175" title="hover text">
+          <img src="https://i.morioh.com/2020/03/06/7295b742907f.jpg" width="240" title="hover text">
+       <img src="https://www.almtoolbox.com/blog_he/wp-content/uploads/2017/09/Git-Logo-2Color-1.png" width="175" title="hover text">
+          <img src="https://miro.medium.com/max/3600/1*fIjRtO5P8zc3pjs0E5hYkw.png" width="175" title="hover text">
+         <img src="https://img.techentice.com/media/2020/06/docker.png" width="125" title="hover text"> 
+</p>
+
+
+
 
